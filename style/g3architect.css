@@ -56,8 +56,11 @@
     font-size: 1.25rem;
     border: none;
 }
+.btn-primary:hover{
+    background-color: blueviolet;
+}
 
-main>section {
+section {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -86,7 +89,7 @@ main>section {
 
 .nav-links {
     width: 40%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-link {
@@ -99,6 +102,12 @@ main>section {
     max-width: 1440px;
     margin: 0 auto;
     padding: 8px;
+}
+nav li:hover{
+    background-color: #eeecec;
+    padding: 5px 15px;
+    border-radius: 5px;
+
 }
 
 /* banner styles */
@@ -147,6 +156,56 @@ main>section {
 }
 
 
+/* features releted style */
+.left-margin {
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 25px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 146px;
+
+}
+
+.fbox-des,
+.feature-intro {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.feature-box {
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.171);
+    background: rgb(255, 255, 255);
+    padding: 32px;
+    margin-bottom: 20px;
+
+}
+
+.fbox-title {
+    margin: 0px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.apu {
+    width: 100%;
+}
+
+.experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -92px;
+    margin-top: -120px;
+}
+
+#experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+}
 
 
 
@@ -186,22 +245,38 @@ main>section {
 
 
 /* sponsor style */
-.sponsors-info{
+.sponsors-info {
     max-width: 540px;
     margin: 0 auto;
     text-align: center;
 }
-.sponsor-des{
+
+.sponsor-des {
     font-weight: 400;
     font-size: 1rem;
     margin: 25px 0 50px 0;
 }
-.sponsor-container{
+
+.sponsor-container {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
-.sponsor-img{
+
+.sponsor-img {
     filter: grayscale(100%);
+}
+
+
+
+/* footer sstyle */
+.footer{
+border-radius: 8px;
+background: rgb(255, 244, 231);
+padding: 29px 410px;
+margin-top: 130px;
+font-size: 1.25rem;
+font-weight: 400;
+text-align: center;
 }
 
 
@@ -217,20 +292,39 @@ main>section {
 
     .team-img-container,
     .facts-container,
-    .sponsor-container {
+    .sponsor-container,
+    .feature-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .facts-container{
+
+    .facts-container {
         justify-items: center;
         gap: 25px;
     }
-    .sponsor-container{
+
+    .sponsor-container {
         justify-items: center;
         gap: 50px;
     }
 
     .our-features {
         margin: 20px;
+    }
+
+    .experience-badge {
+        margin-left: 0px;
+        margin-top: -20px;
+        width: 400px;
+    }
+
+    .feature-img {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+    .footer{
+        padding: 29px 20px;
     }
 }
 
@@ -243,22 +337,46 @@ main>section {
     .our-features {
         margin: 50px auto;
     }
+
     .facts-container,
-    .sponsor-container{
-        grid-template-columns: repeat(2,1fr);
-        
+    .sponsor-container {
+        grid-template-columns: repeat(2, 1fr);
+
     }
-        .facts-container{
+
+    .facts-container {
         justify-items: center;
         gap: 25px;
     }
-    .sponsor-container{
+
+    .sponsor-container {
         justify-items: center;
         gap: 50px;
     }
-    #last-sponsor-img{
+
+    #last-sponsor-img {
         grid-column: span 2;
 
-  
+
+    }
+
+    .feature-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding-inline-start: 5px;
+    }
+        .experience-badge {
+        margin-left: 0px;
+        margin-top: -20px;
+        width: 100%;
+    }
+
+    .feature-img {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+        .footer{
+        padding: 29px 20px;
     }
 }
